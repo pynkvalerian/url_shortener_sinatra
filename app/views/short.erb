@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Welcome to URL shortener!</h1>
+  <p>Your shortened URl:</p>
+  <p><a href="/<%= @new_link.shortened_url%>">http://sho.rt/<%= @new_link.shortened_url %></a></p>
+
+  <form action="/urls" method="post">
+    <input name="url" type="text" placeholder="Your URL">
+    <input type ="submit" name="Submit!">
+  </form>
+
+
+</div>
